@@ -1,0 +1,94 @@
+<%- include('partials/header') %>
+
+    <header class="p-3 text-bg-dark">
+      <div class="container-fluid">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <span class="fs-4">Solopreneurhunt.com</span>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-lg-4"
+          >
+            <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Favorites</a></li>
+            <li>
+              <a href="/pricing.html" class="nav-link px-2 text-white"
+                >Pricing</a
+              >
+            </li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control form-control-dark text-bg-dark"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              <a href="signin.html">Login</a>
+            </button>
+            <button type="button" class="btn btn-warning">
+              <a href="signup.html">Sign-up</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="topics">
+      <!--Attempting off canvas-->
+      <div class="container-fluid d-flex justify-content-end offcanvas-button">
+        <button
+          class="btn btn-lg btn-warning d-md-none d-flex"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive"
+        >
+          Categories
+        </button>
+      </div>
+      <div
+        class="offcanvas-md offcanvas-end"
+        tabindex="-1"
+        id="offcanvasResponsive"
+        aria-labelledby="offcanvasResponsiveLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
+            Solopreneur Topics
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            data-bs-target="#offcanvasResponsive"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="container-fluid topics-container">
+            <ul
+              class="button-list list-group list-group-horizontal justify-content-center"
+            ></ul>
+          </div>
+        </div>
+      </div>
+      <!--Offcanvas end-->
+      <hr />
+    </section>
+
+    
+
+<%- include('partials/footer') %>
