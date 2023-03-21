@@ -1,48 +1,55 @@
 <%- include('partials/header') %>
+<%- include('partials/navbar') %>
 
-    <section id="topics">
-      <!--Attempting off canvas-->
-      <div class="container-fluid d-flex justify-content-end offcanvas-button">
-        <button
-          class="btn btn-lg btn-warning d-md-none d-flex"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasResponsive"
-          aria-controls="offcanvasResponsive"
+<section id="topics">
+  <!--Attempting off canvas-->
+  <div class="container-fluid d-flex justify-content-end offcanvas-button">
+    <button
+      class="btn btn-lg btn-warning d-md-none d-flex"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasResponsive"
+      aria-controls="offcanvasResponsive"
+    >
+      Categories
+    </button>
+  </div>
+  <div
+    class="offcanvas-md offcanvas-end"
+    tabindex="-1"
+    id="offcanvasResponsive"
+    aria-labelledby="offcanvasResponsiveLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
+        Solopreneur Topics
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        data-bs-target="#offcanvasResponsive"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container-fluid topics-container">
+        <ul
+          class="button-list list-group list-group-horizontal justify-content-center"
         >
-          Categories
-        </button>   
-      </div>
-      <div
-        class="offcanvas-md offcanvas-end"
-        tabindex="-1"
-        id="offcanvasResponsive"
-        aria-labelledby="offcanvasResponsiveLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
-            Solopreneur Topics
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            data-bs-target="#offcanvasResponsive"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="container-fluid topics-container">
-            <ul
-              class="button-list list-group list-group-horizontal justify-content-center"
-            ></ul>
-          </div>
-        </div>
-      </div>
-      <!--Offcanvas end-->
-      <hr />
-    </section>
+          <button class="button-75">Copywriting</button>
+          <button class="button-75">Twitter Growth</button>
+          <button class="button-75">Twitter Monetize</button>
+          <button class="button-75">E-commerce</button>
+          <button class="button-75">Sales</button>
+        </ul>
 
-    
+        <h1 class="text-center m-auto mt-5"> Explore the worlds leading community courses</h1>
+      </div>
+    </div>
+  </div>
+  <!--Offcanvas end-->
+  <hr />
+</section>
 
 <%- include('partials/footer') %>

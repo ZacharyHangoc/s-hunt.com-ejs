@@ -1,0 +1,184 @@
+/* General */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Headings */
+
+.brand-name {
+  padding-right: 2%;
+}
+
+/* Sign in & Sign up pages */
+
+h1.h4 {
+  font-weight: bold;
+}
+.body-signin,
+.body-signup {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin a,
+.form-signup a {
+  padding: 0;
+}
+
+.form-signin,
+.form-signup {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within,
+.form-signup .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"],
+.form-signup input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"],
+.form-signup input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.topleftinput {
+  margin-right: -1px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.toprightinput {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.middleinput {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Navbar & buttons */
+
+.button-75 {
+  align-items: center;
+  background-image: linear-gradient(100deg, #f34079 5%, #ffc107);
+  border: 0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: 35px;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-75:active {
+  outline: 0;
+}
+
+.button-75:hover {
+  outline: 0;
+}
+
+.button-75 span {
+  transition: all 200ms;
+}
+
+.button-75:hover span {
+  transform: scale(0.9);
+  opacity: 0.75;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 5px;
+
+}
+
+#topics .container-fluid {
+  padding: 1% 1% 0;
+}
+
+#topics .button-75 {
+  margin: 5px 5px 0 5px;
+}
+
+#topics .list-group {
+  flex-wrap: wrap;
+}
+
+
+
+/* Containers */
+main .container-fluid {
+  padding: 0;
+}
+/* Course section */
+
+/* Right section */
+
+/* Media */
+
+@media (max-width: 991px) {
+  .brand-name {
+    padding: 0;
+  }
+
+  .search-container {
+    width: 75%;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 991px) {
+  .offcanvas-button {
+    display: none;
+    position: absolute;
+  }
+}
+
